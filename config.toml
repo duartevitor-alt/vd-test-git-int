@@ -2,10 +2,11 @@ default_connection_name = "myconnection"
 
 [connections]
 [connections.myconnection]
-account="XQEFMFM-HAKKODAINC_PARTNER"
-user="vitor_duarte@hakkoda.io"
-authenticator="externalbrowser"
-role="data_engineer"
-database="vd"
-schema="cortex"
+account="zwerczl-jf13932"
+user="CLI_USER"
+authenticator="SNOWFLAKE_JWT"
+role="accountadmin"
+database="snowcli"
+schema="vd_sandbox"
 warehouse="compute_wh"
+private_key_file="./rsa_key.p8"

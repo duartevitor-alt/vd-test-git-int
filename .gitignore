@@ -1,2 +1,6 @@
 .venv/
 .env
+rsa_key.p8
+rsa_key.pub
+logs/
+.cli_version.cache
