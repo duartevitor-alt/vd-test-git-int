@@ -1,0 +1,11 @@
+default_connection_name = "myconnection"
+
+[connections]
+[connections.myconnection]
+account="XQEFMFM-HAKKODAINC_PARTNER"
+user="vitor_duarte@hakkoda.io"
+authenticator="externalbrowser"
+role="data_engineer"
+database="vd"
+schema="cortex"
+warehouse="compute_wh"
