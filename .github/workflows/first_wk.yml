@@ -1,0 +1,27 @@
+name: test 
+on: 
+  push:
+    - main
+jobs:
+  version:
+    name: "Check Snowflake CLI version"
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout step is necessary if you want to use a config file from your repo
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Execute Snowflake CLI command
+        if: ${{ github.ref_name == 'main' }}
+        run: |
+          echo oi
+      - name: Execute 2
+        if: ${{ github.ref_name != 'main' }}
+        run: |
+          echo oi2
+      - name: Execute 3
+        run: |
+          echo ${{ github.ref_name }}
+
